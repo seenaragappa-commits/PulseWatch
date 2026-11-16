@@ -1,0 +1,197 @@
+{
+  "console": [
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "url": "http://127.0.0.1:58879/api/monitors",
+      "status": 400
+    }
+  ],
+  "blocked": [],
+  "scenarios": [
+    {
+      "name": "dashboard empty state and navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "create HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "create DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "edit DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "create SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "edit SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "create TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "form validation",
+      "status": "PASS"
+    },
+    {
+      "name": "status history details and refresh persistence",
+      "status": "PASS"
+    },
+    {
+      "name": "three failures create one incident per monitor",
+      "status": "PASS"
+    },
+    {
+      "name": "open incident drawer refreshes after recovery",
+      "status": "PASS",
+      "observed": "INCIDENT DETAILS\n\nBrowser HTTP: Connection refused\n×\nStatus\nRESOLVED\nMonitor\nBrowser HTTP\nMonitor type\nHTTP / HTTPS\nFailure category\nCONNECTION REFUSED\nFirst failure\n11/15/2026, 11:58:41 PM\nLatest failure\n11/15/2026, 11:58:41 PM\nConsecutive failures\n4\nRecovered\n11/15/2026, 11:58:41 PM\nExplanation\n\nThe destination refused the monitoring connection.\n\nRecovery\n\nRecovered with HTTP 200"
+    },
+    {
+      "name": "incident drawer close hit test and viewport containment",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery and reopened incident details",
+      "status": "PASS"
+    },
+    {
+      "name": "overview panel fits mobile grid",
+      "status": "PASS"
+    },
+    {
+      "name": "monitor drawer and backdrop fit viewport",
+      "status": "PASS"
+    },
+    {
+      "name": "certificate metadata and history pagination",
+      "status": "PASS"
+    },
+    {
+      "name": "certificate summary remains current while paging",
+      "status": "PASS"
+    },
+    {
+      "name": "repeated drawer pagination and unobstructed button hit targets",
+      "status": "PASS"
+    },
+    {
+      "name": "layout matches requested viewport without overflow",
+      "status": "PASS",
+      "observed": {
+        "viewport": 390,
+        "outerWidth": 390,
+        "clientWidth": 390,
+        "meta": "width=device-width, initial-scale=1.0",
+        "document": 390,
+        "requested": 390
+      }
+    },
+    {
+      "name": "no unexpected browser errors",
+      "status": "PASS"
+    }
+  ],
+  "database": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-browser-8tKmCQ\\test.db",
+  "closeMetrics": {
+    "viewport": 390,
+    "scroll": 390,
+    "button": {
+      "left": 355.4375,
+      "right": 371,
+      "top": 23.25,
+      "bottom": 56.25,
+      "width": 15.5625,
+      "height": 33
+    },
+    "drawer": {
+      "left": 0,
+      "right": 390
+    },
+    "backdrop": {
+      "left": 0,
+      "right": 390
+    },
+    "hit": true
+  },
+  "overviewMetrics": {
+    "viewport": 390,
+    "scroll": 390,
+    "inner": 390,
+    "visual": 390,
+    "lower": {
+      "left": 14,
+      "right": 376,
+      "width": 362
+    },
+    "panel": {
+      "left": 14,
+      "right": 376,
+      "width": 362
+    },
+    "minWidth": "0px"
+  },
+  "monitorDrawerMetrics": {
+    "inner": 390,
+    "visual": 390,
+    "scroll": 390,
+    "drawer": {
+      "left": 0,
+      "right": 390
+    },
+    "backdrop": {
+      "left": 0,
+      "right": 390
+    }
+  },
+  "pagination": [
+    {
+      "receivesClick": true,
+      "hit": "BUTTON",
+      "drawerWidth": 388,
+      "drawerScrollWidth": 388,
+      "historyWidth": 352,
+      "historyScrollWidth": 620,
+      "display": "block",
+      "direction": "row"
+    },
+    {
+      "receivesClick": true,
+      "hit": "BUTTON",
+      "drawerWidth": 388,
+      "drawerScrollWidth": 388,
+      "historyWidth": 352,
+      "historyScrollWidth": 620,
+      "display": "block",
+      "direction": "row"
+    },
+    {
+      "receivesClick": true,
+      "hit": "BUTTON",
+      "drawerWidth": 388,
+      "drawerScrollWidth": 388,
+      "historyWidth": 352,
+      "historyScrollWidth": 620,
+      "display": "block",
+      "direction": "row"
+    }
+  ]
+}

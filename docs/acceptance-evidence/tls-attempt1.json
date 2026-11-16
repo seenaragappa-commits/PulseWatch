@@ -1,0 +1,12 @@
+{
+  "startedAt": "2026-11-15T17:14:36.441Z",
+  "fixtureDirectory": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-tls-Uu4AsE",
+  "results": [
+    {
+      "test": "TLS acceptance runner",
+      "status": "FAIL",
+      "details": "Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 'example.com'\n"
+    }
+  ],
+  "openssl": "OpenSSL 3.5.8 25 Aug 2026 (Library: OpenSSL 3.5.8 25 Aug 2026)"
+}

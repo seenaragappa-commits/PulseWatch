@@ -1,0 +1,70 @@
+{
+  "startedAt": "2026-11-15T17:18:18.059Z",
+  "results": [
+    {
+      "test": "Isolated API starts empty",
+      "status": "PASS"
+    },
+    {
+      "test": "Built frontend HTML served over local HTTP (not browser execution)",
+      "status": "PASS"
+    },
+    {
+      "test": "HTTP create, edit, pause and resume through running API",
+      "status": "PASS"
+    },
+    {
+      "test": "DNS create, edit, pause and resume through running API",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL create, edit, pause and resume through running API",
+      "status": "PASS"
+    },
+    {
+      "test": "TCP create, edit, pause and resume through running API",
+      "status": "PASS"
+    },
+    {
+      "test": "Scheduler dispatches all four injected checkers; UP status and check history",
+      "status": "PASS"
+    },
+    {
+      "test": "1/2 failures create no incidents; 3/4 create and update exactly one incident per type",
+      "status": "PASS"
+    },
+    {
+      "test": "Recovery resolves incidents, resets counters and retains six paginated checks per type",
+      "status": "PASS"
+    },
+    {
+      "test": "Harness drains and shuts down through stdin command",
+      "status": "PASS"
+    },
+    {
+      "test": "Three database reopen/migration cycles preserve all monitor/check/incident rows; integrity and foreign keys valid",
+      "status": "PASS"
+    },
+    {
+      "test": "Two real backend startup/shutdown cycles using isolated DB preserve edits and paused state",
+      "status": "PASS"
+    },
+    {
+      "test": "Vite starts, transforms React entry, and proxies /api to real backend using isolated DB (not browser execution)",
+      "status": "PASS"
+    },
+    {
+      "test": "Acceptance harness refuses production mode",
+      "status": "PASS"
+    },
+    {
+      "test": "Database-open failure exits without starting API",
+      "status": "PASS"
+    }
+  ],
+  "harness": {
+    "url": "http://127.0.0.1:55954",
+    "database": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-acceptance-9PS3T7\\acceptance.db"
+  },
+  "finishedAt": "2026-11-15T17:18:22.280Z"
+}

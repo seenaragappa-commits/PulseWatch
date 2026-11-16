@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-15",
+  "method": "Computer Use",
+  "status": "BLOCKED",
+  "error": "Computer Use has been stopped for this turn because it could not determine the current browser URL on Windows with enough confidence to enforce policy. Stop your work and send a final message noting why Computer Use ended.",
+  "dashboardObserved": false,
+  "screenshots": [],
+  "playwright": "NOT TESTED: no fallback used to bypass the tool policy stop",
+  "database": "Disposable pulsewatch-acceptance-WQACHQ/acceptance.db; production database not opened",
+  "scenarios": {
+    "loading_navigation": "BLOCKED",
+    "create_four_types": "BLOCKED",
+    "list_details": "BLOCKED",
+    "editing_validation": "BLOCKED",
+    "history_status": "BLOCKED",
+    "incident_threshold": "BLOCKED",
+    "recovery": "BLOCKED",
+    "refresh_persistence": "BLOCKED",
+    "incident_certificate_drawers": "BLOCKED",
+    "console_network": "BLOCKED",
+    "desktop_mobile": "BLOCKED"
+  }
+}

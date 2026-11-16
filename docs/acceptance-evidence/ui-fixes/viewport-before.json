@@ -1,0 +1,27 @@
+{
+  "innerWidth": 980,
+  "outerWidth": 390,
+  "clientWidth": 980,
+  "scrollWidth": 980,
+  "meta": null,
+  "css": [
+    {
+      "selector": "MAIN",
+      "width": 980,
+      "minWidth": "0px",
+      "overflow": "visible"
+    },
+    {
+      "selector": "ASIDE",
+      "width": 188.5,
+      "minWidth": "auto",
+      "overflow": "visible"
+    },
+    {
+      "selector": "content",
+      "width": 791.5,
+      "minWidth": "auto",
+      "overflow": "visible"
+    }
+  ]
+}

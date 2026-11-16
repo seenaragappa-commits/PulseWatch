@@ -1,0 +1,397 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.config.cjs"
+    ],
+    "configFile": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs",
+    "rootDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\global-setup.cjs",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/e2e-runs/run-hardening-verified-c58cfb7f-c104-4c45-994a-a3a981450345",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/e2e-runs/run-hardening-verified-c58cfb7f-c104-4c45-994a-a3a981450345",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-c58cfb7f-c104-4c45-994a-a3a981450345",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-c58cfb7f-c104-4c45-994a-a3a981450345",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-c58cfb7f-c104-4c45-994a-a3a981450345-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "journey.e2e.cjs",
+      "file": "journey.e2e.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "complete isolated UI journey",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21348,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "dashboard empty state and navigation",
+                      "duration": 397
+                    },
+                    {
+                      "title": "create HTTP",
+                      "duration": 208
+                    },
+                    {
+                      "title": "edit HTTP",
+                      "duration": 138
+                    },
+                    {
+                      "title": "create DNS",
+                      "duration": 183
+                    },
+                    {
+                      "title": "edit DNS",
+                      "duration": 128
+                    },
+                    {
+                      "title": "create SSL",
+                      "duration": 150
+                    },
+                    {
+                      "title": "edit SSL",
+                      "duration": 114
+                    },
+                    {
+                      "title": "create TCP",
+                      "duration": 153
+                    },
+                    {
+                      "title": "edit TCP",
+                      "duration": 105
+                    },
+                    {
+                      "title": "form validation",
+                      "duration": 286
+                    },
+                    {
+                      "title": "status history details and refresh persistence",
+                      "duration": 630
+                    },
+                    {
+                      "title": "three failures create one incident per monitor",
+                      "duration": 507
+                    },
+                    {
+                      "title": "incident drawer close hit test and viewport containment",
+                      "duration": 31
+                    },
+                    {
+                      "title": "recovery and reopened incident details",
+                      "duration": 130
+                    },
+                    {
+                      "title": "overview panel fits mobile grid",
+                      "duration": 76
+                    },
+                    {
+                      "title": "monitor drawer and backdrop fit viewport",
+                      "duration": 12
+                    },
+                    {
+                      "title": "certificate metadata and history pagination",
+                      "duration": 185
+                    },
+                    {
+                      "title": "repeated drawer pagination and unobstructed button hit targets",
+                      "duration": 706
+                    }
+                  ],
+                  "startTime": "2026-11-15T19:12:09.043Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-9f85db51-0c22-4c98-ae65-9c08b7f2730a\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-9f85db51-0c22-4c98-ae65-9c08b7f2730a\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "dashboard empty state and navigation",
+                      "duration": 366
+                    },
+                    {
+                      "title": "create HTTP",
+                      "duration": 196
+                    },
+                    {
+                      "title": "edit HTTP",
+                      "duration": 144
+                    },
+                    {
+                      "title": "create DNS",
+                      "duration": 167
+                    },
+                    {
+                      "title": "edit DNS",
+                      "duration": 136
+                    },
+                    {
+                      "title": "create SSL",
+                      "duration": 166
+                    },
+                    {
+                      "title": "edit SSL",
+                      "duration": 99
+                    },
+                    {
+                      "title": "create TCP",
+                      "duration": 156
+                    },
+                    {
+                      "title": "edit TCP",
+                      "duration": 107
+                    },
+                    {
+                      "title": "form validation",
+                      "duration": 287
+                    },
+                    {
+                      "title": "status history details and refresh persistence",
+                      "duration": 688
+                    },
+                    {
+                      "title": "three failures create one incident per monitor",
+                      "duration": 480
+                    },
+                    {
+                      "title": "incident drawer close hit test and viewport containment",
+                      "duration": 21
+                    },
+                    {
+                      "title": "recovery and reopened incident details",
+                      "duration": 131
+                    },
+                    {
+                      "title": "overview panel fits mobile grid",
+                      "duration": 62
+                    },
+                    {
+                      "title": "monitor drawer and backdrop fit viewport",
+                      "duration": 23
+                    },
+                    {
+                      "title": "certificate metadata and history pagination",
+                      "duration": 154
+                    },
+                    {
+                      "title": "repeated drawer pagination and unobstructed button hit targets",
+                      "duration": 675
+                    }
+                  ],
+                  "startTime": "2026-11-15T19:12:31.054Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-75bfec99-0fd2-49d1-86c4-14086513cd80\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-verified-75bfec99-0fd2-49d1-86c4-14086513cd80\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74f33a5c101bb47af9b8-9c76f8433a7286396846",
+          "file": "journey.e2e.cjs",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T19:12:07.431Z",
+    "duration": 45202.909999999996,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

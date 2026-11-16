@@ -1,0 +1,397 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.config.cjs"
+    ],
+    "configFile": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs",
+    "rootDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/acceptance-evidence/overview-grid/acceptance",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/acceptance-evidence/overview-grid/acceptance",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\overview-grid\\acceptance",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\overview-grid\\acceptance",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/acceptance-evidence/overview-grid/acceptance-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "journey.e2e.cjs",
+      "file": "journey.e2e.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "complete isolated UI journey",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "dashboard empty state and navigation",
+                      "duration": 347
+                    },
+                    {
+                      "title": "create HTTP",
+                      "duration": 190
+                    },
+                    {
+                      "title": "edit HTTP",
+                      "duration": 180
+                    },
+                    {
+                      "title": "create DNS",
+                      "duration": 162
+                    },
+                    {
+                      "title": "edit DNS",
+                      "duration": 105
+                    },
+                    {
+                      "title": "create SSL",
+                      "duration": 158
+                    },
+                    {
+                      "title": "edit SSL",
+                      "duration": 116
+                    },
+                    {
+                      "title": "create TCP",
+                      "duration": 156
+                    },
+                    {
+                      "title": "edit TCP",
+                      "duration": 111
+                    },
+                    {
+                      "title": "form validation",
+                      "duration": 279
+                    },
+                    {
+                      "title": "status history details and refresh persistence",
+                      "duration": 568
+                    },
+                    {
+                      "title": "three failures create one incident per monitor",
+                      "duration": 519
+                    },
+                    {
+                      "title": "incident drawer close hit test and viewport containment",
+                      "duration": 28
+                    },
+                    {
+                      "title": "recovery and reopened incident details",
+                      "duration": 127
+                    },
+                    {
+                      "title": "overview panel fits mobile grid",
+                      "duration": 76
+                    },
+                    {
+                      "title": "monitor drawer and backdrop fit viewport",
+                      "duration": 13
+                    },
+                    {
+                      "title": "certificate metadata and history pagination",
+                      "duration": 188
+                    },
+                    {
+                      "title": "repeated drawer pagination and unobstructed button hit targets",
+                      "duration": 722
+                    }
+                  ],
+                  "startTime": "2026-11-15T18:28:16.476Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\overview-grid\\acceptance\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\overview-grid\\acceptance\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "dashboard empty state and navigation",
+                      "duration": 338
+                    },
+                    {
+                      "title": "create HTTP",
+                      "duration": 181
+                    },
+                    {
+                      "title": "edit HTTP",
+                      "duration": 154
+                    },
+                    {
+                      "title": "create DNS",
+                      "duration": 171
+                    },
+                    {
+                      "title": "edit DNS",
+                      "duration": 148
+                    },
+                    {
+                      "title": "create SSL",
+                      "duration": 147
+                    },
+                    {
+                      "title": "edit SSL",
+                      "duration": 103
+                    },
+                    {
+                      "title": "create TCP",
+                      "duration": 154
+                    },
+                    {
+                      "title": "edit TCP",
+                      "duration": 107
+                    },
+                    {
+                      "title": "form validation",
+                      "duration": 287
+                    },
+                    {
+                      "title": "status history details and refresh persistence",
+                      "duration": 638
+                    },
+                    {
+                      "title": "three failures create one incident per monitor",
+                      "duration": 480
+                    },
+                    {
+                      "title": "incident drawer close hit test and viewport containment",
+                      "duration": 21
+                    },
+                    {
+                      "title": "recovery and reopened incident details",
+                      "duration": 129
+                    },
+                    {
+                      "title": "overview panel fits mobile grid",
+                      "duration": 62
+                    },
+                    {
+                      "title": "monitor drawer and backdrop fit viewport",
+                      "duration": 14
+                    },
+                    {
+                      "title": "certificate metadata and history pagination",
+                      "duration": 164
+                    },
+                    {
+                      "title": "repeated drawer pagination and unobstructed button hit targets",
+                      "duration": 659
+                    }
+                  ],
+                  "startTime": "2026-11-15T18:28:38.363Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\overview-grid\\acceptance\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\overview-grid\\acceptance\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74f33a5c101bb47af9b8-9c76f8433a7286396846",
+          "file": "journey.e2e.cjs",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T18:28:16.039Z",
+    "duration": 43814.803,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.config.cjs"
+    ],
+    "configFile": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs",
+    "rootDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\global-setup.cjs",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/e2e-runs/run-hardening-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/e2e-runs/run-hardening-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\e2e-runs\\run-hardening-final-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "journey.e2e.cjs",
+      "file": "journey.e2e.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "complete isolated UI journey",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "failed",
+                  "duration": 0,
+                  "error": {
+                    "message": "Error: E2E output directory or result file already exists",
+                    "stack": "Error: E2E output directory or result file already exists\n    at outputPath (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs:9:73)\n    at Object.<anonymous> (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs:3:14)",
+                    "location": {
+                      "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs",
+                      "column": 73,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39moutput-policy.cjs:9\n\n \u001b[90m  7 |\u001b[39m   \u001b[36mif\u001b[39m(fs\u001b[33m.\u001b[39mexistsSync(root)\u001b[33m&&\u001b[39mfs\u001b[33m.\u001b[39mrealpathSync(root)\u001b[33m!==\u001b[39mroot)\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'E2E output root must not be a symbolic link'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mconst\u001b[39m result\u001b[33m=\u001b[39mpath\u001b[33m.\u001b[39mjoin(root\u001b[33m,\u001b[39mlabel)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mif\u001b[39m(fs\u001b[33m.\u001b[39mexistsSync(result)\u001b[33m||\u001b[39mfs\u001b[33m.\u001b[39mexistsSync(result\u001b[33m+\u001b[39m\u001b[32m'-results.json'\u001b[39m))\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'E2E output directory or result file already exists'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mreturn\u001b[39m result\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m module\u001b[33m.\u001b[39mexports\u001b[33m=\u001b[39m{root\u001b[33m,\u001b[39moutputPath}\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs",
+                        "column": 73,
+                        "line": 9
+                      },
+                      "message": "Error: E2E output directory or result file already exists\n\n   at output-policy.cjs:9\n\n   7 |   if(fs.existsSync(root)&&fs.realpathSync(root)!==root)throw Error('E2E output root must not be a symbolic link');\n   8 |   const result=path.join(root,label);\n>  9 |   if(fs.existsSync(result)||fs.existsSync(result+'-results.json'))throw Error('E2E output directory or result file already exists');\n     |                                                                         ^\n  10 |   return result;\n  11 | }\n  12 | module.exports={root,outputPath};\n    at outputPath (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs:9:73)\n    at Object.<anonymous> (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs:3:14)"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T19:11:49.755Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs",
+                    "column": 73,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "failed",
+                  "duration": 0,
+                  "error": {
+                    "message": "Error: E2E output directory or result file already exists",
+                    "stack": "Error: E2E output directory or result file already exists\n    at outputPath (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs:9:73)\n    at Object.<anonymous> (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs:3:14)",
+                    "location": {
+                      "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs",
+                      "column": 73,
+                      "line": 9
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39moutput-policy.cjs:9\n\n \u001b[90m  7 |\u001b[39m   \u001b[36mif\u001b[39m(fs\u001b[33m.\u001b[39mexistsSync(root)\u001b[33m&&\u001b[39mfs\u001b[33m.\u001b[39mrealpathSync(root)\u001b[33m!==\u001b[39mroot)\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'E2E output root must not be a symbolic link'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mconst\u001b[39m result\u001b[33m=\u001b[39mpath\u001b[33m.\u001b[39mjoin(root\u001b[33m,\u001b[39mlabel)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mif\u001b[39m(fs\u001b[33m.\u001b[39mexistsSync(result)\u001b[33m||\u001b[39mfs\u001b[33m.\u001b[39mexistsSync(result\u001b[33m+\u001b[39m\u001b[32m'-results.json'\u001b[39m))\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'E2E output directory or result file already exists'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mreturn\u001b[39m result\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m module\u001b[33m.\u001b[39mexports\u001b[33m=\u001b[39m{root\u001b[33m,\u001b[39moutputPath}\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs",
+                        "column": 73,
+                        "line": 9
+                      },
+                      "message": "Error: E2E output directory or result file already exists\n\n   at output-policy.cjs:9\n\n   7 |   if(fs.existsSync(root)&&fs.realpathSync(root)!==root)throw Error('E2E output root must not be a symbolic link');\n   8 |   const result=path.join(root,label);\n>  9 |   if(fs.existsSync(result)||fs.existsSync(result+'-results.json'))throw Error('E2E output directory or result file already exists');\n     |                                                                         ^\n  10 |   return result;\n  11 | }\n  12 | module.exports={root,outputPath};\n    at outputPath (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs:9:73)\n    at Object.<anonymous> (C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs:3:14)"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T19:11:50.091Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\output-policy.cjs",
+                    "column": 73,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74f33a5c101bb47af9b8-9c76f8433a7286396846",
+          "file": "journey.e2e.cjs",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T19:11:48.157Z",
+    "duration": 1947.4189999999999,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,328 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: journey.e2e.cjs >> complete isolated UI journey
+- Location: e2e\journey.e2e.cjs:4:1
+
+# Error details
+
+```
+Test timeout of 180000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- main [ref=f5e3]:
+  - complementary [ref=f5e4]:
+    - generic [ref=f5e5]: ◉ PulseWatch
+    - button "Overview" [ref=f5e6] [cursor=pointer]
+    - button "Monitors" [ref=f5e7] [cursor=pointer]
+    - button "Incidents" [ref=f5e8] [cursor=pointer]
+    - button "About" [ref=f5e9] [cursor=pointer]
+  - generic [ref=f5e10]:
+    - generic [ref=f5e11]:
+      - generic [ref=f5e12]:
+        - paragraph [ref=f5e13]: PULSEWATCH / OVERVIEW
+        - heading "System overview" [level=1] [ref=f5e14]
+      - generic [ref=f5e15]:
+        - text: System operational
+        - button "+ Add monitor" [ref=f5e17] [cursor=pointer]
+    - generic [ref=f5e18]:
+      - generic [ref=f5e19]:
+        - strong [ref=f5e20]: "4"
+        - generic [ref=f5e21]: Total monitors
+      - generic [ref=f5e22]:
+        - strong [ref=f5e23]: "4"
+        - generic [ref=f5e24]: Operational
+      - generic [ref=f5e25]:
+        - strong [ref=f5e26]: "0"
+        - generic [ref=f5e27]: Failed
+      - generic [ref=f5e28]:
+        - strong [ref=f5e29]: "0"
+        - generic [ref=f5e30]: Open incidents
+      - generic [ref=f5e31]:
+        - strong [ref=f5e32]: 12 ms
+        - generic [ref=f5e33]: Average response
+    - generic [ref=f5e34]:
+      - generic [ref=f5e35]:
+        - heading "Monitors" [level=2] [ref=f5e36]
+        - generic [ref=f5e37]: 4 configured
+      - table [ref=f5e39]:
+        - rowgroup [ref=f5e40]:
+          - row [ref=f5e41]:
+            - columnheader "Website / domain" [ref=f5e42]
+            - columnheader "Status" [ref=f5e43]
+            - columnheader "Response" [ref=f5e44]
+            - columnheader "Last checked" [ref=f5e45]
+            - columnheader "Schedule" [ref=f5e46]
+            - columnheader [ref=f5e47]
+        - rowgroup [ref=f5e48]:
+          - row [ref=f5e49] [cursor=pointer]:
+            - cell "Browser TCP example.org" [ref=f5e50]:
+              - generic [ref=f5e51]: Browser TCP
+              - generic [ref=f5e52]: example.org
+            - cell "UP" [ref=f5e53]
+            - cell "12 ms" [ref=f5e54]
+            - cell "11/15/2026, 11:10:24 PM" [ref=f5e55]
+            - cell "86400s" [ref=f5e56]
+            - cell [ref=f5e57]:
+              - button "Pause" [ref=f5e58]
+              - button "Edit" [ref=f5e59]
+              - button "Delete" [ref=f5e60]
+          - row [ref=f5e61] [cursor=pointer]:
+            - cell "Browser SSL SSL · example.org" [ref=f5e62]:
+              - generic [ref=f5e63]: Browser SSL
+              - generic [ref=f5e64]: SSL · example.org
+            - cell "UP" [ref=f5e65]
+            - cell "12 ms" [ref=f5e66]
+            - cell "11/15/2026, 11:10:41 PM" [ref=f5e67]
+            - cell "86400s" [ref=f5e68]
+            - cell [ref=f5e69]:
+              - button "Pause" [ref=f5e70]
+              - button "Edit" [ref=f5e71]
+              - button "Delete" [ref=f5e72]
+          - row [ref=f5e73] [cursor=pointer]:
+            - cell "Browser DNS DNS · example.org" [ref=f5e74]:
+              - generic [ref=f5e75]: Browser DNS
+              - generic [ref=f5e76]: DNS · example.org
+            - cell "UP" [ref=f5e77]
+            - cell "12 ms" [ref=f5e78]
+            - cell "11/15/2026, 11:10:24 PM" [ref=f5e79]
+            - cell "86400s" [ref=f5e80]
+            - cell [ref=f5e81]:
+              - button "Pause" [ref=f5e82]
+              - button "Edit" [ref=f5e83]
+              - button "Delete" [ref=f5e84]
+          - row [ref=f5e85] [cursor=pointer]:
+            - cell "Browser HTTP https://example.org" [ref=f5e86]:
+              - generic [ref=f5e87]: Browser HTTP
+              - generic [ref=f5e88]: https://example.org
+            - cell "UP" [ref=f5e89]
+            - cell "12 ms" [ref=f5e90]
+            - cell "11/15/2026, 11:10:24 PM" [ref=f5e91]
+            - cell "86400s" [ref=f5e92]
+            - cell [ref=f5e93]:
+              - button "Pause" [ref=f5e94]
+              - button "Edit" [ref=f5e95]
+              - button "Delete" [ref=f5e96]
+    - generic [ref=f5e97]:
+      - generic [ref=f5e98]:
+        - generic [ref=f5e99]:
+          - heading "Recent incidents" [level=2] [ref=f5e100]
+          - generic [ref=f5e101]: 0 open
+        - 'button "RESOLVED Browser HTTP: Connection refused HTTP · CONNECTION REFUSED · 4 failures First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM" [ref=f5e102] [cursor=pointer]':
+          - generic [ref=f5e103]: RESOLVED
+          - generic [ref=f5e104]:
+            - generic [ref=f5e105]: "Browser HTTP: Connection refused"
+            - generic [ref=f5e106]: HTTP · CONNECTION REFUSED · 4 failures
+            - generic [ref=f5e107]: First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM
+        - 'button "RESOLVED Browser DNS: Connection refused DNS · CONNECTION REFUSED · 4 failures First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM" [ref=f5e108] [cursor=pointer]':
+          - generic [ref=f5e109]: RESOLVED
+          - generic [ref=f5e110]:
+            - generic [ref=f5e111]: "Browser DNS: Connection refused"
+            - generic [ref=f5e112]: DNS · CONNECTION REFUSED · 4 failures
+            - generic [ref=f5e113]: First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM
+        - 'button "RESOLVED Browser SSL: Connection refused SSL · CONNECTION REFUSED · 4 failures First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM" [ref=f5e114] [cursor=pointer]':
+          - generic [ref=f5e115]: RESOLVED
+          - generic [ref=f5e116]:
+            - generic [ref=f5e117]: "Browser SSL: Connection refused"
+            - generic [ref=f5e118]: SSL · CONNECTION REFUSED · 4 failures
+            - generic [ref=f5e119]: First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM
+        - 'button "RESOLVED Browser TCP: Connection refused TCP · CONNECTION REFUSED · 4 failures First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM" [ref=f5e120] [cursor=pointer]':
+          - generic [ref=f5e121]: RESOLVED
+          - generic [ref=f5e122]:
+            - generic [ref=f5e123]: "Browser TCP: Connection refused"
+            - generic [ref=f5e124]: TCP · CONNECTION REFUSED · 4 failures
+            - generic [ref=f5e125]: First failure 11/15/2026, 11:10:24 PM · Recovered 11/15/2026, 11:10:24 PM
+      - generic [ref=f5e126]:
+        - heading "How incident detection works" [level=2] [ref=f5e127]
+        - paragraph [ref=f5e128]: One or two failed checks are recorded as activity. The third consecutive failure opens one incident. A later successful check resolves it automatically.
+    - complementary "Monitor details" [ref=f5e129]:
+      - generic [ref=f5e130]:
+        - generic [ref=f5e131]:
+          - paragraph [ref=f5e132]: SSL CERTIFICATE DETAILS
+          - heading "Browser SSL" [level=2] [ref=f5e133]
+        - button "Close monitor details" [ref=f5e134] [cursor=pointer]: ×
+      - paragraph [ref=f5e135]: example.org
+      - generic [ref=f5e136]:
+        - generic [ref=f5e137]:
+          - generic [ref=f5e138]: Type
+          - strong [ref=f5e139]: SSL certificate
+        - generic [ref=f5e140]:
+          - generic [ref=f5e141]: Current status
+          - strong [ref=f5e142]:
+            - generic [ref=f5e143]: UP
+        - generic [ref=f5e144]:
+          - generic [ref=f5e145]: Latest response
+          - strong [ref=f5e146]: 12 ms
+        - generic [ref=f5e147]:
+          - generic [ref=f5e148]: Last checked
+          - strong [ref=f5e149]: 11/15/2026, 11:10:41 PM
+        - generic [ref=f5e150]:
+          - generic [ref=f5e151]: Interval
+          - strong [ref=f5e152]: 86400 seconds
+        - generic [ref=f5e153]:
+          - generic [ref=f5e154]: Timeout
+          - strong [ref=f5e155]: 10000 ms
+        - generic [ref=f5e156]:
+          - generic [ref=f5e157]: Expiry warning
+          - strong [ref=f5e158]: 30 days
+        - generic [ref=f5e159]:
+          - generic [ref=f5e160]: Consecutive failures
+          - strong [ref=f5e161]: "0"
+        - generic [ref=f5e162]:
+          - generic [ref=f5e163]: Certificate issuer
+          - strong [ref=f5e164]: Current fixture CA
+        - generic [ref=f5e165]:
+          - generic [ref=f5e166]: Valid from
+          - strong [ref=f5e167]: 11/1/2026, 5:30:00 AM
+        - generic [ref=f5e168]:
+          - generic [ref=f5e169]: Valid to
+          - strong [ref=f5e170]: 1/1/2027, 5:30:00 AM
+        - generic [ref=f5e171]:
+          - generic [ref=f5e172]: Days until expiry
+          - strong [ref=f5e173]: "47"
+      - generic [ref=f5e174]:
+        - generic [ref=f5e175]:
+          - heading "Check history" [level=3] [ref=f5e176]
+          - generic [ref=f5e177]: 31 recorded
+        - table [ref=f5e179]:
+          - rowgroup [ref=f5e180]:
+            - row [ref=f5e181]:
+              - columnheader "Status" [ref=f5e182]
+              - columnheader "Response" [ref=f5e183]
+              - columnheader "Certificate expiry" [ref=f5e184]
+              - columnheader "Checked" [ref=f5e185]
+              - columnheader "Failure message" [ref=f5e186]
+          - rowgroup [ref=f5e187]:
+            - row [ref=f5e188]:
+              - cell "UP" [ref=f5e189]
+              - cell "12 ms" [ref=f5e190]
+              - cell "47 days" [ref=f5e191]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e192]
+              - cell "—" [ref=f5e193]
+            - row [ref=f5e194]:
+              - cell "UP" [ref=f5e195]
+              - cell "12 ms" [ref=f5e196]
+              - cell "47 days" [ref=f5e197]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e198]
+              - cell "—" [ref=f5e199]
+            - row [ref=f5e200]:
+              - cell "UP" [ref=f5e201]
+              - cell "12 ms" [ref=f5e202]
+              - cell "47 days" [ref=f5e203]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e204]
+              - cell "—" [ref=f5e205]
+            - row [ref=f5e206]:
+              - cell "UP" [ref=f5e207]
+              - cell "12 ms" [ref=f5e208]
+              - cell "47 days" [ref=f5e209]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e210]
+              - cell "—" [ref=f5e211]
+            - row [ref=f5e212]:
+              - cell "UP" [ref=f5e213]
+              - cell "12 ms" [ref=f5e214]
+              - cell "47 days" [ref=f5e215]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e216]
+              - cell "—" [ref=f5e217]
+            - row [ref=f5e218]:
+              - cell "UP" [ref=f5e219]
+              - cell "12 ms" [ref=f5e220]
+              - cell "47 days" [ref=f5e221]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e222]
+              - cell "—" [ref=f5e223]
+            - row [ref=f5e224]:
+              - cell "UP" [ref=f5e225]
+              - cell "12 ms" [ref=f5e226]
+              - cell "47 days" [ref=f5e227]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e228]
+              - cell "—" [ref=f5e229]
+            - row [ref=f5e230]:
+              - cell "UP" [ref=f5e231]
+              - cell "12 ms" [ref=f5e232]
+              - cell "47 days" [ref=f5e233]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e234]
+              - cell "—" [ref=f5e235]
+            - row [ref=f5e236]:
+              - cell "UP" [ref=f5e237]
+              - cell "12 ms" [ref=f5e238]
+              - cell "47 days" [ref=f5e239]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e240]
+              - cell "—" [ref=f5e241]
+            - row [ref=f5e242]:
+              - cell "UP" [ref=f5e243]
+              - cell "12 ms" [ref=f5e244]
+              - cell "47 days" [ref=f5e245]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e246]
+              - cell "—" [ref=f5e247]
+            - row [ref=f5e248]:
+              - cell "UP" [ref=f5e249]
+              - cell "12 ms" [ref=f5e250]
+              - cell "47 days" [ref=f5e251]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e252]
+              - cell "—" [ref=f5e253]
+            - row [ref=f5e254]:
+              - cell "UP" [ref=f5e255]
+              - cell "12 ms" [ref=f5e256]
+              - cell "47 days" [ref=f5e257]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e258]
+              - cell "—" [ref=f5e259]
+            - row [ref=f5e260]:
+              - cell "UP" [ref=f5e261]
+              - cell "12 ms" [ref=f5e262]
+              - cell "47 days" [ref=f5e263]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e264]
+              - cell "—" [ref=f5e265]
+            - row [ref=f5e266]:
+              - cell "UP" [ref=f5e267]
+              - cell "12 ms" [ref=f5e268]
+              - cell "47 days" [ref=f5e269]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e270]
+              - cell "—" [ref=f5e271]
+            - row [ref=f5e272]:
+              - cell "UP" [ref=f5e273]
+              - cell "12 ms" [ref=f5e274]
+              - cell "47 days" [ref=f5e275]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e276]
+              - cell "—" [ref=f5e277]
+            - row [ref=f5e278]:
+              - cell "UP" [ref=f5e279]
+              - cell "12 ms" [ref=f5e280]
+              - cell "47 days" [ref=f5e281]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e282]
+              - cell "—" [ref=f5e283]
+            - row [ref=f5e284]:
+              - cell "UP" [ref=f5e285]
+              - cell "12 ms" [ref=f5e286]
+              - cell "47 days" [ref=f5e287]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e288]
+              - cell "—" [ref=f5e289]
+            - row [ref=f5e290]:
+              - cell "UP" [ref=f5e291]
+              - cell "12 ms" [ref=f5e292]
+              - cell "47 days" [ref=f5e293]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e294]
+              - cell "—" [ref=f5e295]
+            - row [ref=f5e296]:
+              - cell "UP" [ref=f5e297]
+              - cell "12 ms" [ref=f5e298]
+              - cell "47 days" [ref=f5e299]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e300]
+              - cell "—" [ref=f5e301]
+            - row [ref=f5e302]:
+              - cell "UP" [ref=f5e303]
+              - cell "12 ms" [ref=f5e304]
+              - cell "47 days" [ref=f5e305]
+              - cell "11/15/2026, 11:10:41 PM" [ref=f5e306]
+              - cell "—" [ref=f5e307]
+        - generic [ref=f5e308]:
+          - button "Previous" [disabled] [ref=f5e309]
+          - generic [ref=f5e310]: Page 1 of 2
+          - button "Next" [ref=f5e311] [cursor=pointer]
+```

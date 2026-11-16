@@ -1,0 +1,56 @@
+{
+  "startedAt": "2026-11-15T17:14:51.329Z",
+  "fixtureDirectory": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-tls-iUIOCA",
+  "results": [
+    {
+      "test": "SSL real handshake: valid; pinned transport options and strict verification",
+      "status": "PASS"
+    },
+    {
+      "test": "HTTPS real handshake: valid; TLS remains enabled",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL real handshake: warning; pinned transport options and strict verification",
+      "status": "PASS"
+    },
+    {
+      "test": "HTTPS real handshake: warning; TLS remains enabled",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL real handshake: expired; pinned transport options and strict verification",
+      "status": "PASS"
+    },
+    {
+      "test": "HTTPS real handshake: expired; TLS remains enabled",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL real handshake: mismatch; pinned transport options and strict verification",
+      "status": "PASS"
+    },
+    {
+      "test": "HTTPS real handshake: mismatch; TLS remains enabled",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL real handshake: untrusted; pinned transport options and strict verification",
+      "status": "PASS"
+    },
+    {
+      "test": "HTTPS real handshake: untrusted; TLS remains enabled",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL real socket malformed failure",
+      "status": "PASS"
+    },
+    {
+      "test": "SSL real socket timeout failure",
+      "status": "PASS"
+    }
+  ],
+  "openssl": "OpenSSL 3.5.8 25 Aug 2026 (Library: OpenSSL 3.5.8 25 Aug 2026)",
+  "finishedAt": "2026-11-15T17:14:52.229Z"
+}

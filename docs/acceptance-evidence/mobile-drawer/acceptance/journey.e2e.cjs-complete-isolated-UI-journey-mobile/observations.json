@@ -1,0 +1,70 @@
+{
+  "console": [
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "url": "http://127.0.0.1:56236/api/monitors",
+      "status": 400
+    }
+  ],
+  "blocked": [],
+  "scenarios": [
+    {
+      "name": "dashboard empty state and navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "create HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "create DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "edit DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "create SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "edit SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "create TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "form validation",
+      "status": "PASS"
+    },
+    {
+      "name": "status history details and refresh persistence",
+      "status": "PASS"
+    },
+    {
+      "name": "three failures create one incident per monitor",
+      "status": "PASS"
+    },
+    {
+      "name": "open incident drawer refreshes after recovery",
+      "status": "PASS",
+      "observed": "INCIDENT DETAILS\n\nBrowser HTTP: Connection refused\n×\nStatus\nRESOLVED\nMonitor\nBrowser HTTP\nMonitor type\nHTTP / HTTPS\nFailure category\nCONNECTION REFUSED\nFirst failure\n11/15/2026, 11:29:17 PM\nLatest failure\n11/15/2026, 11:29:17 PM\nConsecutive failures\n4\nRecovered\n11/15/2026, 11:29:17 PM\nExplanation\n\nThe destination refused the monitoring connection.\n\nRecovery\n\nRecovered with HTTP 200"
+    }
+  ],
+  "database": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-browser-H8NivO\\test.db"
+}

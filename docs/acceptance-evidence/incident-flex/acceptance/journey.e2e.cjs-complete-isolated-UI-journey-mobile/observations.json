@@ -1,0 +1,104 @@
+{
+  "console": [
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "url": "http://127.0.0.1:53014/api/monitors",
+      "status": 400
+    }
+  ],
+  "blocked": [],
+  "scenarios": [
+    {
+      "name": "dashboard empty state and navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "create HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "create DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "edit DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "create SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "edit SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "create TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "form validation",
+      "status": "PASS"
+    },
+    {
+      "name": "status history details and refresh persistence",
+      "status": "PASS"
+    },
+    {
+      "name": "three failures create one incident per monitor",
+      "status": "PASS"
+    },
+    {
+      "name": "open incident drawer refreshes after recovery",
+      "status": "PASS",
+      "observed": "INCIDENT DETAILS\n\nBrowser HTTP: Connection refused\n×\nStatus\nRESOLVED\nMonitor\nBrowser HTTP\nMonitor type\nHTTP / HTTPS\nFailure category\nCONNECTION REFUSED\nFirst failure\n11/15/2026, 11:43:56 PM\nLatest failure\n11/15/2026, 11:43:56 PM\nConsecutive failures\n4\nRecovered\n11/15/2026, 11:43:56 PM\nExplanation\n\nThe destination refused the monitoring connection.\n\nRecovery\n\nRecovered with HTTP 200"
+    },
+    {
+      "name": "incident drawer close hit test and viewport containment",
+      "status": "PASS"
+    },
+    {
+      "name": "recovery and reopened incident details",
+      "status": "PASS"
+    },
+    {
+      "name": "certificate metadata and history pagination",
+      "status": "FAIL",
+      "error": "locator.click: Test timeout of 180000ms exceeded.\nBrowser logs:\n\n<launching> C:\\Users\\Moinu\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1255\\chrome-headless-shell-win64\\chrome-headless-shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --user-data-dir=C:\\Users\\Moinu\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-2iEYzh --remote-debugging-pipe --no-startup-window\n<launched> pid=6684\n[pid=6684] <gracefully close start>\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Next', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"secondary\">Next</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <td>11/15/2026, 11:44:13 PM</td> from <div class=\"history-scroll\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <td>11/15/2026, 11:44:13 PM</td> from <div class=\"history-scroll\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    303 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <td>11/15/2026, 11:44:13 PM</td> from <div class=\"history-scroll\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n"
+    }
+  ],
+  "database": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-browser-WyNAtm\\test.db",
+  "closeMetrics": {
+    "viewport": 390,
+    "scroll": 390,
+    "button": {
+      "left": 355.4375,
+      "right": 371,
+      "top": 23.25,
+      "bottom": 56.25,
+      "width": 15.5625,
+      "height": 33
+    },
+    "drawer": {
+      "left": 0,
+      "right": 390
+    },
+    "backdrop": {
+      "left": 0,
+      "right": 390
+    },
+    "hit": true
+  }
+}

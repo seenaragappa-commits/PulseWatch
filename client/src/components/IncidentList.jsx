@@ -1,0 +1,7 @@
+import {Status} from './Status';
+import './IncidentList.css';
+const time=value=>value?new Date(value).toLocaleString():'—';
+const type=value=>!value?'Historical type unavailable':value==='TCP'?'TCP':value==='DNS'?'DNS':value==='SSL'?'SSL':'HTTP';
+const category=value=>value?value.replaceAll('_',' ').replace(/\b\w/g,letter=>letter.toUpperCase()):'Historical incident';
+
+export function IncidentList({incidents,onOpen}){return <section className="panel incidents"><div className="panel-title"><h2>Recent incidents</h2><span>{incidents.filter(item=>item.status==='OPEN').length} open</span></div>{incidents.length?incidents.map(incident=><button className="incident" type="button" onClick={()=>onOpen?.(incident)} key={incident.id}><Status value={incident.closure_reason==='configuration_changed'?'CLOSED':incident.status}/><div><b>{incident.incident_title||incident.monitor_name||`Monitor #${incident.monitor_id}`}</b><small>{type(incident.monitor_type)} · {category(incident.failure_category)} · {incident.consecutive_failure_count??incident.failure_count} failures</small><small>First failure {time(incident.incident_first_failure_at||incident.first_failure_at||incident.started_at)}{incident.status==='RESOLVED'?` · ${incident.closure_reason==='configuration_changed'?'Closed (configuration changed)':'Recovered'} ${time(incident.resolved_at)}`:''}</small></div></button>):<div className="empty">No incidents recorded.</div>}</section>;}

@@ -1,0 +1,95 @@
+{
+  "console": [
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "httpErrors": [
+    {
+      "url": "http://127.0.0.1:56331/api/monitors",
+      "status": 400
+    }
+  ],
+  "blocked": [],
+  "scenarios": [
+    {
+      "name": "dashboard empty state and navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "create HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "create DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "edit DNS",
+      "status": "PASS"
+    },
+    {
+      "name": "create SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "edit SSL",
+      "status": "PASS"
+    },
+    {
+      "name": "create TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "edit TCP",
+      "status": "PASS"
+    },
+    {
+      "name": "form validation",
+      "status": "PASS"
+    },
+    {
+      "name": "status history details and refresh persistence",
+      "status": "PASS"
+    },
+    {
+      "name": "three failures create one incident per monitor",
+      "status": "PASS"
+    },
+    {
+      "name": "open incident drawer refreshes after recovery",
+      "status": "FAIL",
+      "observed": "INCIDENT DETAILS\n\nBrowser HTTP: Connection refused\n×\nStatus\nOPEN\nMonitor\nBrowser HTTP\nMonitor type\nHTTP / HTTPS\nFailure category\nCONNECTION REFUSED\nFirst failure\n11/15/2026, 11:05:04 PM\nLatest failure\n11/15/2026, 11:05:05 PM\nConsecutive failures\n4\nExplanation\n\nThe destination refused the monitoring connection."
+    },
+    {
+      "name": "recovery and reopened incident details",
+      "status": "PASS"
+    },
+    {
+      "name": "certificate metadata and history pagination",
+      "status": "PASS"
+    },
+    {
+      "name": "certificate summary remains current while paging",
+      "status": "FAIL"
+    },
+    {
+      "name": "layout matches requested viewport without overflow",
+      "status": "PASS",
+      "observed": {
+        "viewport": 1440,
+        "document": 1440,
+        "requested": 1440
+      }
+    },
+    {
+      "name": "no unexpected browser errors",
+      "status": "PASS"
+    }
+  ],
+  "database": "C:\\Users\\Moinu\\AppData\\Local\\Temp\\pulsewatch-browser-9vgRQl\\test.db"
+}

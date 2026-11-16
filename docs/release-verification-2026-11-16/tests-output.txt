@@ -1,0 +1,15 @@
+
+> pulsewatch@1.0.0 test
+> vitest run --reporter=dot --reporter=json --outputFile=docs/release-verification-2026-11-16/tests.json
+
+
+ RUN  v4.1.12 C:/Users/Moinu/Desktop/pulsewatch-rebuild
+
+·······················································································································································
+
+ Test Files  16 passed (16)
+      Tests  151 passed (151)
+   Start at  00:18:00
+   Duration  2.11s (transform 788ms, setup 0ms, import 8.87s, tests 3.17s, environment 3ms)
+
+JSON report written to C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/release-verification-2026-11-16/tests.json

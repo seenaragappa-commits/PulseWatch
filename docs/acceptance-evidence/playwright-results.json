@@ -1,0 +1,423 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.config.cjs"
+    ],
+    "configFile": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\playwright.config.cjs",
+    "rootDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/acceptance-evidence/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/docs/acceptance-evidence/playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "C:/Users/Moinu/Desktop/pulsewatch-rebuild/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "*.e2e.cjs"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "snapshotDir": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e",
+        "testIgnore": [],
+        "testMatch": "*.e2e.cjs",
+        "timeout": 180000,
+        "use": {
+          "headless": true,
+          "serviceWorkers": "block",
+          "trace": "on",
+          "screenshot": "on",
+          "launchOptions": {
+            "chromiumSandbox": true
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/acceptance-evidence/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "journey.e2e.cjs",
+      "file": "journey.e2e.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "complete isolated UI journey",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20215,
+                  "error": {
+                    "message": "Error: Browser acceptance defects\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 31\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"open incident drawer refreshes after recovery\",\u001b[39m\n\u001b[31m+     \"observed\": \"INCIDENT DETAILS\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Browser HTTP: Connection refused\u001b[39m\n\u001b[31m+ ×\u001b[39m\n\u001b[31m+ Status\u001b[39m\n\u001b[31m+ OPEN\u001b[39m\n\u001b[31m+ Monitor\u001b[39m\n\u001b[31m+ Browser HTTP\u001b[39m\n\u001b[31m+ Monitor type\u001b[39m\n\u001b[31m+ HTTP / HTTPS\u001b[39m\n\u001b[31m+ Failure category\u001b[39m\n\u001b[31m+ CONNECTION REFUSED\u001b[39m\n\u001b[31m+ First failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:03:45 PM\u001b[39m\n\u001b[31m+ Latest failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:03:45 PM\u001b[39m\n\u001b[31m+ Consecutive failures\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\u001b[31m+ Explanation\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ The destination refused the monitoring connection.\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"certificate summary remains current while paging\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: Browser acceptance defects\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 31\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"open incident drawer refreshes after recovery\",\u001b[39m\n\u001b[31m+     \"observed\": \"INCIDENT DETAILS\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Browser HTTP: Connection refused\u001b[39m\n\u001b[31m+ ×\u001b[39m\n\u001b[31m+ Status\u001b[39m\n\u001b[31m+ OPEN\u001b[39m\n\u001b[31m+ Monitor\u001b[39m\n\u001b[31m+ Browser HTTP\u001b[39m\n\u001b[31m+ Monitor type\u001b[39m\n\u001b[31m+ HTTP / HTTPS\u001b[39m\n\u001b[31m+ Failure category\u001b[39m\n\u001b[31m+ CONNECTION REFUSED\u001b[39m\n\u001b[31m+ First failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:03:45 PM\u001b[39m\n\u001b[31m+ Latest failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:03:45 PM\u001b[39m\n\u001b[31m+ Consecutive failures\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\u001b[31m+ Explanation\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ The destination refused the monitoring connection.\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"certificate summary remains current while paging\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs:36:83",
+                    "location": {
+                      "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs",
+                      "column": 83,
+                      "line": 36
+                    },
+                    "snippet": " \u001b[90m 34 |\u001b[39m  logs\u001b[33m.\u001b[39mscenarios\u001b[33m.\u001b[39mpush({name\u001b[33m:\u001b[39m\u001b[32m'no unexpected browser errors'\u001b[39m\u001b[33m,\u001b[39mstatus\u001b[33m:\u001b[39mlogs\u001b[33m.\u001b[39mpageErrors\u001b[33m.\u001b[39mlength\u001b[33m||\u001b[39mlogs\u001b[33m.\u001b[39mfailedRequests\u001b[33m.\u001b[39mlength\u001b[33m||\u001b[39mlogs\u001b[33m.\u001b[39mblocked\u001b[33m.\u001b[39mlength\u001b[33m||\u001b[39mlogs\u001b[33m.\u001b[39mhttpErrors\u001b[33m.\u001b[39msome(r\u001b[33m=>\u001b[39mr\u001b[33m.\u001b[39mstatus\u001b[33m!==\u001b[39m\u001b[35m400\u001b[39m)\u001b[33m?\u001b[39m\u001b[32m'FAIL'\u001b[39m\u001b[33m:\u001b[39m\u001b[32m'PASS'\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m  }\u001b[36mfinally\u001b[39m{fs\u001b[33m.\u001b[39mwriteFileSync(info\u001b[33m.\u001b[39moutputPath(\u001b[32m'observations.json'\u001b[39m)\u001b[33m,\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(logs\u001b[33m,\u001b[39m\u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m\u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m command(\u001b[32m'stop'\u001b[39m)\u001b[33m;\u001b[39m}\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m  expect(logs\u001b[33m.\u001b[39mscenarios\u001b[33m.\u001b[39mfilter(s\u001b[33m=>\u001b[39ms\u001b[33m.\u001b[39mstatus\u001b[33m===\u001b[39m\u001b[32m'FAIL'\u001b[39m)\u001b[33m,\u001b[39m\u001b[32m'Browser acceptance defects'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs",
+                        "column": 83,
+                        "line": 36
+                      },
+                      "message": "Error: Browser acceptance defects\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 31\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"open incident drawer refreshes after recovery\",\u001b[39m\n\u001b[31m+     \"observed\": \"INCIDENT DETAILS\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Browser HTTP: Connection refused\u001b[39m\n\u001b[31m+ ×\u001b[39m\n\u001b[31m+ Status\u001b[39m\n\u001b[31m+ OPEN\u001b[39m\n\u001b[31m+ Monitor\u001b[39m\n\u001b[31m+ Browser HTTP\u001b[39m\n\u001b[31m+ Monitor type\u001b[39m\n\u001b[31m+ HTTP / HTTPS\u001b[39m\n\u001b[31m+ Failure category\u001b[39m\n\u001b[31m+ CONNECTION REFUSED\u001b[39m\n\u001b[31m+ First failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:03:45 PM\u001b[39m\n\u001b[31m+ Latest failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:03:45 PM\u001b[39m\n\u001b[31m+ Consecutive failures\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\u001b[31m+ Explanation\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ The destination refused the monitoring connection.\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"certificate summary remains current while paging\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  34 |  logs.scenarios.push({name:'no unexpected browser errors',status:logs.pageErrors.length||logs.failedRequests.length||logs.blocked.length||logs.httpErrors.some(r=>r.status!==400)?'FAIL':'PASS'});\n  35 |  }finally{fs.writeFileSync(info.outputPath('observations.json'),JSON.stringify(logs,null,2));await command('stop');}\n> 36 |  expect(logs.scenarios.filter(s=>s.status==='FAIL'),'Browser acceptance defects').toEqual([]);\n     |                                                                                   ^\n  37 | });\n  38 |\n    at C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs:36:83"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "dashboard empty state and navigation",
+                      "duration": 394
+                    },
+                    {
+                      "title": "create HTTP",
+                      "duration": 176
+                    },
+                    {
+                      "title": "edit HTTP",
+                      "duration": 141
+                    },
+                    {
+                      "title": "create DNS",
+                      "duration": 150
+                    },
+                    {
+                      "title": "edit DNS",
+                      "duration": 114
+                    },
+                    {
+                      "title": "create SSL",
+                      "duration": 150
+                    },
+                    {
+                      "title": "edit SSL",
+                      "duration": 109
+                    },
+                    {
+                      "title": "create TCP",
+                      "duration": 158
+                    },
+                    {
+                      "title": "edit TCP",
+                      "duration": 118
+                    },
+                    {
+                      "title": "form validation",
+                      "duration": 275
+                    },
+                    {
+                      "title": "status history details and refresh persistence",
+                      "duration": 601
+                    },
+                    {
+                      "title": "three failures create one incident per monitor",
+                      "duration": 502
+                    },
+                    {
+                      "title": "recovery and reopened incident details",
+                      "duration": 116
+                    },
+                    {
+                      "title": "certificate metadata and history pagination",
+                      "duration": 168
+                    }
+                  ],
+                  "startTime": "2026-11-15T17:33:42.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts\\journey.e2e.cjs-complete-isolated-UI-journey-desktop\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs",
+                    "column": 83,
+                    "line": 36
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20642,
+                  "error": {
+                    "message": "Error: Browser acceptance defects\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 31\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"open incident drawer refreshes after recovery\",\u001b[39m\n\u001b[31m+     \"observed\": \"INCIDENT DETAILS\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Browser HTTP: Connection refused\u001b[39m\n\u001b[31m+ ×\u001b[39m\n\u001b[31m+ Status\u001b[39m\n\u001b[31m+ OPEN\u001b[39m\n\u001b[31m+ Monitor\u001b[39m\n\u001b[31m+ Browser HTTP\u001b[39m\n\u001b[31m+ Monitor type\u001b[39m\n\u001b[31m+ HTTP / HTTPS\u001b[39m\n\u001b[31m+ Failure category\u001b[39m\n\u001b[31m+ CONNECTION REFUSED\u001b[39m\n\u001b[31m+ First failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:04:06 PM\u001b[39m\n\u001b[31m+ Latest failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:04:07 PM\u001b[39m\n\u001b[31m+ Consecutive failures\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\u001b[31m+ Explanation\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ The destination refused the monitoring connection.\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"certificate summary remains current while paging\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: Browser acceptance defects\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 31\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"open incident drawer refreshes after recovery\",\u001b[39m\n\u001b[31m+     \"observed\": \"INCIDENT DETAILS\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Browser HTTP: Connection refused\u001b[39m\n\u001b[31m+ ×\u001b[39m\n\u001b[31m+ Status\u001b[39m\n\u001b[31m+ OPEN\u001b[39m\n\u001b[31m+ Monitor\u001b[39m\n\u001b[31m+ Browser HTTP\u001b[39m\n\u001b[31m+ Monitor type\u001b[39m\n\u001b[31m+ HTTP / HTTPS\u001b[39m\n\u001b[31m+ Failure category\u001b[39m\n\u001b[31m+ CONNECTION REFUSED\u001b[39m\n\u001b[31m+ First failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:04:06 PM\u001b[39m\n\u001b[31m+ Latest failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:04:07 PM\u001b[39m\n\u001b[31m+ Consecutive failures\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\u001b[31m+ Explanation\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ The destination refused the monitoring connection.\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"certificate summary remains current while paging\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs:36:83",
+                    "location": {
+                      "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs",
+                      "column": 83,
+                      "line": 36
+                    },
+                    "snippet": " \u001b[90m 34 |\u001b[39m  logs\u001b[33m.\u001b[39mscenarios\u001b[33m.\u001b[39mpush({name\u001b[33m:\u001b[39m\u001b[32m'no unexpected browser errors'\u001b[39m\u001b[33m,\u001b[39mstatus\u001b[33m:\u001b[39mlogs\u001b[33m.\u001b[39mpageErrors\u001b[33m.\u001b[39mlength\u001b[33m||\u001b[39mlogs\u001b[33m.\u001b[39mfailedRequests\u001b[33m.\u001b[39mlength\u001b[33m||\u001b[39mlogs\u001b[33m.\u001b[39mblocked\u001b[33m.\u001b[39mlength\u001b[33m||\u001b[39mlogs\u001b[33m.\u001b[39mhttpErrors\u001b[33m.\u001b[39msome(r\u001b[33m=>\u001b[39mr\u001b[33m.\u001b[39mstatus\u001b[33m!==\u001b[39m\u001b[35m400\u001b[39m)\u001b[33m?\u001b[39m\u001b[32m'FAIL'\u001b[39m\u001b[33m:\u001b[39m\u001b[32m'PASS'\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m  }\u001b[36mfinally\u001b[39m{fs\u001b[33m.\u001b[39mwriteFileSync(info\u001b[33m.\u001b[39moutputPath(\u001b[32m'observations.json'\u001b[39m)\u001b[33m,\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(logs\u001b[33m,\u001b[39m\u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m\u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m command(\u001b[32m'stop'\u001b[39m)\u001b[33m;\u001b[39m}\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m  expect(logs\u001b[33m.\u001b[39mscenarios\u001b[33m.\u001b[39mfilter(s\u001b[33m=>\u001b[39ms\u001b[33m.\u001b[39mstatus\u001b[33m===\u001b[39m\u001b[32m'FAIL'\u001b[39m)\u001b[33m,\u001b[39m\u001b[32m'Browser acceptance defects'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs",
+                        "column": 83,
+                        "line": 36
+                      },
+                      "message": "Error: Browser acceptance defects\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 31\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"open incident drawer refreshes after recovery\",\u001b[39m\n\u001b[31m+     \"observed\": \"INCIDENT DETAILS\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Browser HTTP: Connection refused\u001b[39m\n\u001b[31m+ ×\u001b[39m\n\u001b[31m+ Status\u001b[39m\n\u001b[31m+ OPEN\u001b[39m\n\u001b[31m+ Monitor\u001b[39m\n\u001b[31m+ Browser HTTP\u001b[39m\n\u001b[31m+ Monitor type\u001b[39m\n\u001b[31m+ HTTP / HTTPS\u001b[39m\n\u001b[31m+ Failure category\u001b[39m\n\u001b[31m+ CONNECTION REFUSED\u001b[39m\n\u001b[31m+ First failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:04:06 PM\u001b[39m\n\u001b[31m+ Latest failure\u001b[39m\n\u001b[31m+ 11/15/2026, 11:04:07 PM\u001b[39m\n\u001b[31m+ Consecutive failures\u001b[39m\n\u001b[31m+ 4\u001b[39m\n\u001b[31m+ Explanation\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ The destination refused the monitoring connection.\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"name\": \"certificate summary remains current while paging\",\u001b[39m\n\u001b[31m+     \"status\": \"FAIL\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  34 |  logs.scenarios.push({name:'no unexpected browser errors',status:logs.pageErrors.length||logs.failedRequests.length||logs.blocked.length||logs.httpErrors.some(r=>r.status!==400)?'FAIL':'PASS'});\n  35 |  }finally{fs.writeFileSync(info.outputPath('observations.json'),JSON.stringify(logs,null,2));await command('stop');}\n> 36 |  expect(logs.scenarios.filter(s=>s.status==='FAIL'),'Browser acceptance defects').toEqual([]);\n     |                                                                                   ^\n  37 | });\n  38 |\n    at C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs:36:83"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "dashboard empty state and navigation",
+                      "duration": 358
+                    },
+                    {
+                      "title": "create HTTP",
+                      "duration": 203
+                    },
+                    {
+                      "title": "edit HTTP",
+                      "duration": 116
+                    },
+                    {
+                      "title": "create DNS",
+                      "duration": 153
+                    },
+                    {
+                      "title": "edit DNS",
+                      "duration": 108
+                    },
+                    {
+                      "title": "create SSL",
+                      "duration": 176
+                    },
+                    {
+                      "title": "edit SSL",
+                      "duration": 113
+                    },
+                    {
+                      "title": "create TCP",
+                      "duration": 166
+                    },
+                    {
+                      "title": "edit TCP",
+                      "duration": 157
+                    },
+                    {
+                      "title": "form validation",
+                      "duration": 312
+                    },
+                    {
+                      "title": "status history details and refresh persistence",
+                      "duration": 877
+                    },
+                    {
+                      "title": "three failures create one incident per monitor",
+                      "duration": 541
+                    },
+                    {
+                      "title": "recovery and reopened incident details",
+                      "duration": 147
+                    },
+                    {
+                      "title": "certificate metadata and history pagination",
+                      "duration": 178
+                    }
+                  ],
+                  "startTime": "2026-11-15T17:34:03.487Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\docs\\acceptance-evidence\\playwright-artifacts\\journey.e2e.cjs-complete-isolated-UI-journey-mobile\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Moinu\\Desktop\\pulsewatch-rebuild\\e2e\\journey.e2e.cjs",
+                    "column": 83,
+                    "line": 36
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74f33a5c101bb47af9b8-9c76f8433a7286396846",
+          "file": "journey.e2e.cjs",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T17:33:42.096Z",
+    "duration": 42318.254,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

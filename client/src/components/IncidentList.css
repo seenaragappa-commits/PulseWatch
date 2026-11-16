@@ -1,0 +1,2 @@
+.incident{width:100%;background:transparent;color:inherit;text-align:left;font-weight:400;border-radius:0}.incident>div{min-width:0}.incident>div>b{overflow-wrap:anywhere}.incident:hover{background:#182233}.incident:focus-visible{outline:2px solid #60a5fa;outline-offset:2px}
+@media(max-width:650px){.lower>.incidents{min-width:0}}
