@@ -1,0 +1,4 @@
+const { ZodError } = require('zod'); const { AppError }=require('../utils/errors');
+function errorHandler(err,req,res,next) { if(err?.type==='entity.parse.failed')return res.status(400).json({error:'Invalid JSON request body'});if(err?.type==='entity.too.large')return res.status(413).json({error:'Request body is too large'});if(err instanceof ZodError) return res.status(400).json({error:'Validation failed',details:err.issues.map(x=>({path:x.path.join('.'),message:x.message}))}); if(err instanceof AppError)return res.status(err.status).json({error:err.message,details:err.details}); if(err?.code==='SQLITE_CONSTRAINT_UNIQUE')return res.status(409).json({error:'A monitor for this URL already exists'}); console.error('Unhandled request error:',err.message); res.status(500).json({error:'An unexpected server error occurred'}); }
+function notFound(req,res){res.status(404).json({error:'Route not found'});}
+module.exports={errorHandler,notFound};

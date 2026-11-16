@@ -1,0 +1,51 @@
+node_modules/
+dist/
+coverage/
+*.log
+
+# Local configuration (the example is safe to share)
+.env
+.env.*
+!.env.example
+
+# Runtime SQLite database, WAL/SHM files, and verification artifacts
+server/data/
+
+# SQLite databases and sidecars
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+
+# Common local secrets
+secrets.json
+secrets.local.json
+*.p12
+*.pfx
+
+# Generated browser and test artifacts (keep curated documentation separately)
+test-results/
+playwright-report/
+blob-report/
+*.trace
+docs/acceptance-evidence/
+docs/e2e-runs/
+docs/incident-source-verification-*/
+docs/release-candidate-*/
+docs/release-hardening-*/
+docs/release-snapshot-verification-*/
+docs/release-verification-*/
+
+# Temporary local files
+*.tmp
+*.temp
+tmp/
+temp/
